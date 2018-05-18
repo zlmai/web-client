@@ -15,11 +15,11 @@
           </ul>
         </li>
         <li id="todo-layout" style="position: absolute">
-          <a id="todo-task" href="javascript:void(0)" >
+          <a id="todo-task" href="javascript:void(0)" @mouseover="showTodoTaskList = true" @mouseleave="showTodoTaskList = false">
             <span id='todo-task-icon' class="glyphicon glyphicon-envelope"></span>
             <span id="todo-task-count" :class="['badge',{'has-todo':!isNaN(todoAmount) && todoAmount > 0}]" v-html="todoAmount"></span>
           </a>
-          <ul id="todo-task-list" class="nav" style="display: none;"></ul>
+          <ul v-show="showTodoTaskList" class="nav"></ul>
         </li>
       </ul>
     </div>
@@ -72,7 +72,8 @@ export default {
     return {
       currentUser: 'zlmai',
       avatar: avatar,
-      todoAmount: '<img src="'+loading+'" style="width: 14px;height:14px;">'
+      todoAmount: '<img src="'+loading+'" style="width: 14px;height:14px;">',
+      showTodoTaskList:false
     }
   }
 }
@@ -95,6 +96,10 @@ export default {
   }
   #header-layout.open a{
     background-color:white
+  }
+  .nav .open>a, .nav .open>a {
+    background-color: white !important;
+    border-color: #337ab7;
   }
   #user-header-img-layout{
     background-color:transparent;
