@@ -10,8 +10,8 @@
           <ul class="dropdown-menu">
             <li><a @click="go('logout')" id="logout">注销</a></li>
             <li class="divider"></li>
-            <li><a id="nebulaTimeAxis">Nebula时光轴</a></li>
-            <li><a id="aboutNebula">关于Nebula</a></li>
+            <li><a id="nebulaTimeAxis">时光轴</a></li>
+            <li><a id="aboutNebula">关于</a></li>
           </ul>
         </li>
         <li id="todo-layout" style="position: absolute">
@@ -35,10 +35,10 @@
       <ul class="nav navbar-nav navbar-right">
         <li>
           <a href="RTXLite.HotLink://UserName=idchelper" style="color: #211DD8;">
-          <span class="darkBlue" title="使用中如有任何问题，请rtx联系idchelper">技术支持:</span><span style="margin: 0 2px;">idchelper</span></a>
+          <span class="darkBlue" title="使用中如有任何问题，请联系helper">技术支持:</span><span style="margin: 0 2px;">helper</span></a>
         </li>
         <li>
-          <a id="logo" href="/" title="星云平台">
+          <a id="logo" href="/" title="XX平台">
             <img src="/static/common/images/logo/logo-nebula-color.png" style="width: 100px;height: 30px;">
           </a>
         </li>
