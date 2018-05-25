@@ -53,7 +53,7 @@
 
 <script>
 import avatar from '../../assets/images/avatar/guest.png'
-import logo from '../../assets/images/logo/logo-nebula-color.png'
+import logo from '../../assets/images/logo/logo-right-up.png'
 import loading from '../../assets/images/loading/icon_loading.gif'
 import http from '../../utils/http'
 import groupParser from '../../utils/groupParser'
